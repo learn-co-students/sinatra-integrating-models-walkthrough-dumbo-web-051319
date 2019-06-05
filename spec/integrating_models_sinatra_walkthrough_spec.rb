@@ -16,6 +16,7 @@ describe App do
   describe 'POST /' do
     it "displays string results" do
       visit '/'
+      # binding.pry
 
       fill_in(:user_text, :with => "Green Eggs and Ham")
       click_button "submit"
